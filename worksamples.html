@@ -3,66 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unit Plans and Resource Samples</title>
-<header>
-    <body style="background-color: #FFF9BF;">
-    <h1 style="color:black; text-align: center;">Unit Plans and Resource Samples</h1>
-    <nav>
-      <nav style="display: flex; align-items: center; gap: 10px;">
-      <a href="index.html">Home</a>
-<!-- Put different flower image in between each link -->
-      <img src="images/flower1.jpg" alt="Flower image Spacer" width="18px">
-      <a href="about.html">About Me</a>
-      <img src="images/flower2.jpg" alt="Flower image Spacer" width="18px">
-      <a href="teachingphilosophy.html">Teaching Philosophy</a>
-      <img src="images/flower3.jpg" alt="Flower image Spacer" width="18px">
-      <a href="worksamples.html">Unit Plans and Resource Samples</a>
-      <img src="images/flower4.jpg" alt="Flower image Spacer" width="18px">
-      <a href="projects.html">University Projects</a>
-    </nav>
-  </head>
+    <title>Kiera Walkerden's Teaching Portfolio - Unit Plans and Resource Samples</title>
+    <link rel="stylesheet" href="starter.css">
 </head>
+<body>
 
-<!-- Main Content Area-->
+<!-- Website title -->
+    <header>
+        <h1 class="site-title">Unit Plans and Resource Samples</h1>
+    </header>
+
+<!-- Navigation Menu with different flower spacers between each picture -->
+    <nav>
+    <div class="container">
+        <img src="images/flower2.png" alt="Flower spacer" class="nav-spacer">
+        <a href="index.html">Home</a>
+        <img src="images/flower3.png" alt="Flower spacer" class="nav-spacer">
+        <a href="about.html">About Me</a>
+        <img src="images/flower2.png" alt="Flower spacer" class="nav-spacer">
+        <a href="teachingphilosophy.html">Teaching Philosophy</a>
+        <img src="images/flower3.png" alt="Flower spacer" class="nav-spacer">
+        <a href="worksamples.html" class="active">Unit Plans and Resource Samples</a>
+        <img src="images/flower2.png" alt="Flower spacer" class="nav-spacer">
+        <a href="projects.html">University Projects</a>
+        <img src="images/flower3.png" alt="Flower spacer" class="nav-spacer">
+        <a href="contact.html">Contact Me</a>
+    </div>
+    </nav>
+
+<!-- Main Content Area -->
     <main>
-    <!-- Introduction to content-->
+        <!-- Introduction to content-->
         <section>
-        <h2>Welcome</h2>
-        <p>Throughout my degree, I have developed lots of unit plans and lesson resources as well as completed many TAS projects across all specialities.</p>
+            <h2>Welcome</h2>
+            <p>Throughout my degree, I have developed lots of unit plans and lesson resources as well as completed many TAS projects across all specialities.</p>
         </section>
 
-        <!-- Sample 1 -->
+        <!-- Sample 1: Design and Technology Unit -->
         <section>
             <h2>Design and Technology Unit Resources</h2>
-            <article>
-                <h3>Stage 6 Design and Technology</h3>
-                <p>These unit resources were developed for a Stage 6 Design and Technology class in a comprehensive co-educational high school located in the diverse, metropolitan area of Wahroonga in Sydney. The school has a student population of approximately 1000 students, with 21% of students identifying as coming from language backgrounds other than English. The classroom context includes a mixed-ability cohort, including students with Individual Learning Plans (ILPs) and English as an Additional Language or Dialect (EAL/D) support requirements. Diagnostic and formative assessment data indicated a need for targeted support in literacy, critical thinking, and organisation of design ideas.</p>
-            </article>
-            <article>
-                <h3>Lesson Topic: Design industry professions and popular designers</h3>
-                <p>In this task students explore different design professions and how they work together, building understanding of collaboration in the design process and preparing for their case study.</p>
-                <img src="images/designindustryprofessions.jpg" alt="Design Industry Professions and Popular Designers Resource Information" width="300px">
-                <!-- Add in full worksheet below the information sheet. Make actual resource sheet larger, maybe 500px-->
-            </article>
-        </section>
 
-        <!-- Sample 2-->
-        <section>
             <article>
-                <h3>Lesson Topic: Factors affecting design / design detective</h3>
-                <p>In this task students will learn about factors that influence design by defining each factor with an example. They will then choose a product, identify which factors shaped its design, and use AI to check and extend their understanding.</p>
-                <img src="images/factorsaffectingdesign1.jpg" alt="Factors Affecting Design/ Design Detective Resource Information 1" width="300px">
-                <img src="images/factorsaffectingdesign2.jpg" alt="Factors Affecting Design/ Design Detective Resource Information 2" width="300px">
-                <img src="images/factorsaffectingdesign3.jpg" alt="Factors Affecting Design/ Design Detective Resource Information 3" width="300px">
-                 <!-- Add in full worksheet below the information sheet. Make actual resource sheet larger, maybe 500px-->
+            <h3>Stage 6 Design and Technology</h3>
+            <p>These unit resources were developed for a Stage 6 Design and Technology class in a comprehensive co-educational high school located in the diverse, metropolitan area of Wahroonga in Sydney. The school has a student population of approximately 1000 students, with 21% of students identifying as coming from language backgrounds other than English. The classroom context includes a mixed-ability cohort, including students with Individual Learning Plans (ILPs) and English as an Additional Language or Dialect (EAL/D) support requirements. Diagnostic and formative assessment data indicated a need for targeted support in literacy, critical thinking, and organisation of design ideas.</p>
+
+            <h3>Lesson Topic: Design industry professions and popular designers</h3>
+            <p>In this task students explore different design professions and how they work together, building understanding of collaboration in the design process and preparing for their case study.</p>
+
+            <img src="images/designindustryprofessions.jpg" alt="Design Industry Professions and Popular Designers Resource Information" 
+                class="main-photo img-center" 
+                style="flex: 1 1 50%; max-width: 500px; min-width: 250px; width: 80%;">
+            <div>
+        <!-- Sample 2: Factors affecting design -->
+            <h3>Lesson Topic: Factors affecting design / design detective</h3>
+            <p>In this task students will learn about factors that influence design by defining each factor with an example. They will then choose a product, identify which factors shaped its design, and use AI to check and extend their understanding.</p>
+            
+            <figure class="flex-container" style="gap: 20px;">
+                <img src="images/factorsaffectingdesign1.jpg" alt="Factors Affecting Design Resource 1" class="main-photo" style="flex: 1 1 30%; min-width: 200px;">
+                <img src="images/factorsaffectingdesign2.jpg" alt="Factors Affecting Design Resource 2" class="main-photo" style="flex: 1 1 30%; min-width: 200px;">
+                <img src="images/factorsaffectingdesign3.jpg" alt="Factors Affecting Design Resource 3" class="main-photo" style="flex: 1 1 30%; min-width: 200px;">
+            </div>
+            </figure>
             </article>
         </section>
     </main>
 
-   
 <!-- Footer -->
-    <footer style="font-family: Georgia; font-size: 14px; margin-top: 50px;">Kiera Walkerden – Teaching Portfolio – 2025
-        <p style="font-family: Georgia;"><a href="contact.html">Contact Me</a></p>
+    <footer>
+        <div class="container" style="justify-content: center;">
+            <p>Kiera Walkerden – Teaching Portfolio – 2025</p>
+        </div>
     </footer>
 </body>
 </html>

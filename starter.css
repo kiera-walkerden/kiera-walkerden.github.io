@@ -1,9 +1,5 @@
 /* =====================================================
    COMP208 starter.css (plug-and-play)
-   Purpose: Give you a clean visual baseline quickly.
-   How to use: Link this in <head> of every page:
-     <link rel="stylesheet" href="starter.css">
-   Tip: Read the comments and tweak values as you go.
    ===================================================== */
 
 /* ---------- 1) CSS Reset / Base ----------- */
@@ -264,7 +260,7 @@ input[type="text"], input[type="email"], textarea {
 input:focus, textarea:focus {
   outline: none;                                  /* Removes default outline */
   border-color: var(--brand);                     /* Brand border on focus */
-  box-shadow: 0 0 0 3px rgba(28,76,150,0.15);   /* Glow on focus */
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.15);   /* Glow on focus */
 }
 textarea { 
   min-height: 140px;        /* Minimum height */
@@ -272,7 +268,7 @@ textarea {
 }
 button, input[type="submit"] {
   background: var(--brand-2);   /* Brand colour */
-  color: #000000;             /* White text */
+  color: #000000;             /* Black text */
   border: none;               /* No border */
   padding: 10px 16px;         /* Internal spacing */
   border-radius: 10px;        /* Rounded corners */
@@ -287,6 +283,17 @@ button:hover, input[type="submit"]:hover {
   font-size: 0.85rem;
   display: block;
   margin-top: 5px;
+}
+fieldset {
+  border: 2px solid #FFD230;   /* Yellow border instead of blue */
+  border-radius: var(--radius); /* Rounded corners for consistency */
+  padding: var(--spacing);      /* Internal spacing */
+  background: var(--surface);   /* Matches your section/card background */
+}
+legend {
+  font-weight: 600;
+  padding: 0 8px;               /* Small padding so text doesn’t overlap border */
+  color: #000000;               /* Black text */
 }
 
 /* ---------- 10) Footer --------------------- */

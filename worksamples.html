@@ -27,46 +27,67 @@
         <img src="images/flower2.png" alt="Flower spacer" class="nav-spacer">
         <a href="projects.html">University Projects</a>
         <img src="images/flower3.png" alt="Flower spacer" class="nav-spacer">
+        <a href="resume.html">Resume and Professional Profile</a>
+        <img src="images/flower2.png" alt="Flower spacer" class="nav-spacer">
         <a href="contact.html">Contact Me</a>
     </div>
     </nav>
 
 <!-- Main Content Area -->
-    <main>
-        <!-- Introduction to content-->
-        <section>
-            <h2>Welcome</h2>
-            <p>Throughout my degree, I have developed lots of unit plans and lesson resources as well as completed many TAS projects across all specialities.</p>
-        </section>
+<main>
+    <!-- Introduction to content -->
+    <h2>Welcome</h2>
+    <p>Throughout my degree, I have developed lots of unit plans and lesson resources as well as completed many TAS projects across all specialties.</p>
 
-        <!-- Sample 1: Design and Technology Unit -->
-        <section>
-            <h2>Design and Technology Unit Resources</h2>
+    <!-- Card Grid Layout including Stage 6 intro -->
+    <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 12px; max-width: 1200px; margin: 16px auto;">
 
-            <article>
-            <h3>Stage 6 Design and Technology</h3>
+        <!-- Stage 6 Intro spanning full width -->
+        <div style="grid-column: 1 / -1; text-align: left; padding: 16px; margin-bottom: 4px;">
+            <h3 style="text-align: center; margin-bottom: px;">Stage 6 Design and Technology</h3>
             <p>These unit resources were developed for a Stage 6 Design and Technology class in a comprehensive co-educational high school located in the diverse, metropolitan area of Wahroonga in Sydney. The school has a student population of approximately 1000 students, with 21% of students identifying as coming from language backgrounds other than English. The classroom context includes a mixed-ability cohort, including students with Individual Learning Plans (ILPs) and English as an Additional Language or Dialect (EAL/D) support requirements. Diagnostic and formative assessment data indicated a need for targeted support in literacy, critical thinking, and organisation of design ideas.</p>
+        </div>
 
-            <h3>Lesson Topic: Design industry professions and popular designers</h3>
-            <p>In this task students explore different design professions and how they work together, building understanding of collaboration in the design process and preparing for their case study.</p>
+        <!-- Card 1: Design Industry Professions -->
+        <div style="display: flex; flex-direction: column; justify-content: space-between; min-height: 200px; padding: 16px; text-align: left; border: 1px solid #FFD230; border-radius: 8px; box-shadow: 1px 1px 4px rgba(0,0,0,0.1); background: transparent;">
+            <div style="display: flex; align-items: flex-start; gap: 16px; flex-wrap: wrap;">
+                <!-- Left text -->
+                <div style="flex: 2;">
+                    <h4>Lesson Topic: Design Industry Professions and Popular Designers</h4>
+                    <p>In this task students explore different design professions and how they work together, building understanding of collaboration in the design process and preparing for their case study.</p>
+                </div>
 
-            <img src="images/designindustryprofessions.jpg" alt="Design Industry Professions and Popular Designers Resource Information" 
-                class="main-photo img-center" 
-                style="flex: 1 1 50%; max-width: 500px; min-width: 250px; width: 80%;">
-            <div>
-        <!-- Sample 2: Factors affecting design -->
-            <h3>Lesson Topic: Factors affecting design / design detective</h3>
-            <p>In this task students will learn about factors that influence design by defining each factor with an example. They will then choose a product, identify which factors shaped its design, and use AI to check and extend their understanding.</p>
-            
-            <figure class="flex-container" style="gap: 20px;">
-                <img src="images/factorsaffectingdesign1.jpg" alt="Factors Affecting Design Resource 1" class="main-photo" style="flex: 1 1 30%; min-width: 200px;">
-                <img src="images/factorsaffectingdesign2.jpg" alt="Factors Affecting Design Resource 2" class="main-photo" style="flex: 1 1 30%; min-width: 200px;">
-                <img src="images/factorsaffectingdesign3.jpg" alt="Factors Affecting Design Resource 3" class="main-photo" style="flex: 1 1 30%; min-width: 200px;">
+                <!-- Right image -->
+                <div style="flex: 1; text-align: center;">
+                    <a href="files/design_industry_professions_and_popular_designers.pdf" download>
+                        <img src="images/designindustryprofessions.png" alt="Design Industry Professions and Popular Designers Resource" style="max-width: 200px; height: auto; border-radius: 8px;">
+                    </a>
+                    <p style="font-size: 13px; font-style: italic; margin-top: 4px;">Click on the image above to download this resource!</p>
+                </div>
             </div>
-            </figure>
-            </article>
-        </section>
-    </main>
+        </div>
+
+        <!-- Card 2: Factors Affecting Design -->
+        <div style="display: flex; flex-direction: column; justify-content: space-between; min-height: 200px; padding: 16px; text-align: left; border: 1px solid #FFD230; border-radius: 8px; box-shadow: 1px 1px 4px rgba(0,0,0,0.1); background: transparent;">
+            <div style="display: flex; align-items: flex-start; gap: 16px; flex-wrap: wrap;">
+                <!-- Left text -->
+                <div style="flex: 2;">
+                    <h4>Lesson Topic: Factors Affecting Design / Design Detective</h4>
+                    <p>In this task students will learn about factors that influence design by defining each factor with an example. They will then choose a product, identify which factors shaped its design, and use AI to check and extend their understanding.</p>
+                </div>
+
+                <!-- Right image -->
+                <div style="flex: 1; text-align: center;">
+                    <a href="files/factors_affecting_design.pdf" download>
+                        <img src="images/factorsaffectingdesign.png" alt="Factors Affecting Design Resource" style="max-width: 200px; height: auto; border-radius: 8px;">
+                    </a>
+                    <p style="font-size: 13px; font-style: italic; margin-top: 4px;">Click on the image above to download this resource!</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</main>
 
 <!-- Footer -->
     <footer>

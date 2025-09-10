@@ -12,6 +12,7 @@
 html, body { 
   margin: 0;    /* Removes default browser margin */
   padding: 0;   /* Removes default browser padding */
+  width: 100%;
 }
 img { 
   max-width: 100%;  /* Ensures images never exceed container width */
@@ -28,7 +29,7 @@ img {
   --muted: #333300;        /* secondary text */
   --surface: #FFF3B5;      /* card/section bg */
   --radius: 12px;          /* rounded corners */
-  --shadow: 0 4px 12px rgba(0.2,0.2,0.2,0.2);    /* Subtle shadow for depth */
+  --shadow: 0 4px 12px #00000033;    /* Subtle shadow for depth */
   --spacing: 16px;         /* base spacing unit */
   --maxw: 1100px;          /* content width */
   --font-body: Georgia, serif;  /* Body font */
@@ -48,12 +49,14 @@ body {
   font-family: Georgia, serif;
 }
 main {
-  width: min(100% - 2*var(--spacing), var(--maxw));   /* Responsive content width */
-  margin: 32px auto;                                  /* Centers main content with spacing */
+  width: 100%;
+  max-width: var(--maxw);
+  padding: 0 var(--spacing);
+  margin: 32px auto;
 }
 
 /* ---------- 4) Typography ------------------ */
-h1, h2, h3 h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: Georgia, serif;  /* Uses heading font */
   line-height: 1;                 /* Tight line spacing for headings */
   margin: 0 0 0.6em;              /* Space below headings */
@@ -89,7 +92,9 @@ header {
   font-family: Georgia, serif;
 }
 header .container {
-  width: min(100% - 2*var(--spacing), var(--maxw));   /* Responsive width */
+  width: 100%;
+  max-width: var(--maxw);
+  padding: 0 var(--spacing);
   margin: 0 auto;                                     /* Centers horizontally */
   display: flex;                                      /* Aligns children horizontally */
   gap: var(--spacing);                                /* Space between flex items */
@@ -97,7 +102,9 @@ header .container {
   justify-content: space-between;                     /* Pushes items apart */
 }
 header h1 {
-  width: min(100% - 2*var(--spacing), var(--maxw));   /* Responsive heading width */
+  width: 100%;
+  max-width: var(--maxw);
+  padding: 0 var(--spacing);
   margin: 32px auto;                                  /* Centers heading */
   color: var(--head);                                 /* Special header colour */
   font-family: Georgia, serif;
@@ -115,7 +122,7 @@ nav {
   font-family: Georgia, serif;
 }
 .nav-spacer {
-    width: 24px;
+    width: 35px;
     height: auto;
     vertical-align: middle;
 }
@@ -139,7 +146,7 @@ nav a {
     text-decoration: none;
     color: #000; 
     font-family: Georgia, serif;
-    font-size: 18px;
+    font-size: 20px;
     padding: 5px 8px; 
     transition: color 0.3s, font-weight 0.3s;
 }
@@ -169,6 +176,10 @@ main, section, article, aside {
   margin: 18px 0;                       /* Vertical spacing */
   box-shadow: var(--shadow);            /* Subtle shadow */
   font-family: Georgia, serif;
+  width: 100%;
+  max-width: none;
+  margin: 18px auto;
+  padding: calc(var(--spacing) * 1.25);
 }
 /* Layout for profile-like content (side-by-side text and image) */
 section.profile, article.profile {
@@ -214,16 +225,15 @@ thead {
 th {
   color: #000000;              /* Black header text */
   font-weight: bold;          /* Bold header text */
-}
-tr:nth-child(even) {
-  background-color: #FFF9BF;  /* Zebra stripe effect for even rows */
+  background-color: #fee487;  /* filled colour for top row */
 }
 .flex-container {
   display: flex;                    /* Horizontal flex layout */
   flex-wrap: wrap;                  /* Wraps to next line if needed */
   gap: 20px;                        /* Space between items */
-  justify-content: space-between;   /* Space between items */
-  margin-top: 20px;                 /* Space above container */
+  justify-content: center;
+  margin: 20px auto;
+  padding: 0 var(--spacing); 
 }
 .project-card, .card {
   flex: 1 1 350px;                /* Responsive card width */
@@ -310,12 +320,14 @@ footer p {
   color: #000000;     /* Black paragraph text */
 }
 footer .container {
-  width: min(100% - 2*var(--spacing), var(--maxw));       /* Responsive width */
-  margin: 0 auto;                     /* Centered container */
-  display: flex;                      /* Flex layout */
-  justify-content: space-between;     /* Space between items */
-  gap: var(--spacing);                /* Gap between items */
-  flex-wrap: wrap;                    /* Allows wrapping on smaller screens */
+  width: 100%;
+  max-width: var(--maxw);
+  padding: 0 var(--spacing);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing);
+  flex-wrap: wrap;
 }
 
 /* ---------- 11) Utilities ------------------ */

@@ -720,6 +720,34 @@ input, select, textarea {
 
 		}
 
+		.image-row {
+			display: flex;
+			justify-content: center;
+			gap: 10px;
+			flex-wrap: wrap;
+		}
+
+		.image-row img {
+			max-width: 35%;
+			height: auto;
+			border-radius: 5px;
+			margin-bottom: 10px;
+		}
+
+		.image-cad {
+			display: flex;
+			justify-content: center;
+			gap: 10px;
+			flex-wrap: wrap;
+		}
+
+		.image-cad img {
+			max-width: 60%;
+			height: auto;
+			border-radius: 5px;
+			margin-bottom: 10px;
+		}
+
 /* List */
 
 	ol {
@@ -938,6 +966,7 @@ input, select, textarea {
 	table {
 		margin: 0 0 2rem 0;
 		width: 100%;
+		table-layout: fixed;
 	}
 
 		table tbody tr {
@@ -946,20 +975,20 @@ input, select, textarea {
 			border-right: 0;
 		}
 
-			table tbody tr:nth-child(2n + 1) {
-				background-color: rgba(255, 255, 255, 0.075);
-			}
-
 		table td {
-			padding: 0.75em 0.75em;
+			color: #ffffff
+			font-size: 18px;
+			padding: 0.4em 0.4em 0.4em 0.4em;
+			text-align: center;
 		}
 
 		table th {
-			color: #ffffff;
-			font-size: 0.9em;
-			font-weight: 600;
-			padding: 0 0.75em 0.75em 0.75em;
-			text-align: left;
+			background-color: #fff9bf; 
+			color: #1f1d1d;
+			font-size: 18px;
+			font-weight: bold;
+			padding: 0.4em 0.4em 0.4em 0.4em;
+			text-align: center;
 		}
 
 		table thead {
@@ -1131,14 +1160,14 @@ input, select, textarea {
 		}
 
 		#bg:before {
-			-moz-transition: background-color 2.5s ease-in-out;
-			-webkit-transition: background-color 2.5s ease-in-out;
-			-ms-transition: background-color 2.5s ease-in-out;
-			transition: background-color 2.5s ease-in-out;
-			-moz-transition-delay: 0.75s;
-			-webkit-transition-delay: 0.75s;
-			-ms-transition-delay: 0.75s;
-			transition-delay: 0.75s;
+			-moz-transition: background-color 0.75s ease-in-out;
+			-webkit-transition: background-color 0.75s ease-in-out;
+			-ms-transition: background-color 0.75s ease-in-out;
+			transition: background-color 0.75s ease-in-out;
+			-moz-transition-delay: 0.5s;
+			-webkit-transition-delay: 0.5s;
+			-ms-transition-delay: 0.5s;
+			transition-delay: 0.5s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
 			background-size: auto,
  256px 256px;

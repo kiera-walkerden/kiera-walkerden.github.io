@@ -757,16 +757,24 @@ input, select, textarea {
 
 		.image-cad {
 			display: flex;
-			justify-content: center;
-			gap: 10px;
-			flex-wrap: wrap;
+			align-items: flex-start;
+			justify-content: flex-start;
+			width: 100%;
+			max-width: 900px;
+			margin: 0 auto;
+			gap: 20px;
+		}
+
+		.image-cad p {
+			flex: 1;
+			margin: 0;
+			font-size: 14px;
 		}
 
 		.image-cad img {
-			max-width: 60%;
+			width: 300px;
 			height: auto;
 			border-radius: 5px;
-			margin-bottom: 10px;
 		}
 
 		.image-with-text {

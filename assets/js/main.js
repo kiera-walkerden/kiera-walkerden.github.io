@@ -1,7 +1,8 @@
 /*
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Template: Dimension by HTML5 UP
+Author: AJ / @n33co
+Source: https://html5up.net
+License: Creative Commons Attribution 3.0 (https://html5up.net/license)
 */
 
 (function($) {
@@ -397,5 +398,58 @@
 					$window.on('load', function() {
 						$main._show(location.hash.substr(1), true);
 					});
+
+		// Contact form js feature
+		document.getElementById('contactForm').addEventListener('submit', function(e) {
+			e.preventDefault();
+
+			const name = document.getElementById('name').value;
+
+			alert(`Thank you for reaching out ${name}, I'll ensure I get back to you soon!`);
+
+			this.submit();
+		});
+
+		// Resume image js feature
+		document.addEventListener('DOMContentLoaded', function() {
+
+			var resumeLink = document.getElementById('resumeLink');
+			var messageContainer = document.getElementById('messageContainer');
+
+			resumeLink.addEventListener('click', function(event) {
+				event.preventDefault();
+
+				if (!document.getElementById('summaryForm')) {
+
+					messageContainer.innerHTML =
+						'<p>Thanks for downloading my resume! Would you also like a pdf summary of all the information on this website emailed to you? Fill out the form below to have it sent to your inbox!</p><br>' +
+						'<form id="summaryForm">' +
+						'<input type="text" id="name" placeholder="Full Name" required><br>' +
+						'<input type="email" id="email" placeholder="Email" required><br>' +
+						'<button type="submit">Send</button>' +
+						'</form>';
+
+					var form = document.getElementById('summaryForm');
+
+					form.addEventListener('submit', function(e) {
+						e.preventDefault();
+
+						var name = document.getElementById('name').value;
+						var email = document.getElementById('email').value;
+
+						if (name && email) {
+							var link = document.createElement('a');
+							link.href = resumeLink.href;
+							link.download = '';
+							document.body.appendChild(link);
+							link.click();
+							document.body.removeChild(link);
+
+							messageContainer.innerHTML = '';
+						}
+					});
+				}
+			});
+		});
 
 })(jQuery);
